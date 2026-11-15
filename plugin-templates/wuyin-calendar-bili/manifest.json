@@ -1,7 +1,7 @@
 {
   "id": "wuyin.calendar.bili",
   "name": "追剧日历 · 番剧",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "菠萝吹雪",
   "description": "首页显示 B 站番剧/国创本周更新：时间、集数，点击片名直接搜索资源。兼容 5.1.6+，纯脚本、无 HSP。",
   "pluginType": "script",

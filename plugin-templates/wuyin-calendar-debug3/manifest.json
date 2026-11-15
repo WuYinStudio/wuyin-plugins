@@ -1,0 +1,32 @@
+{
+  "id": "wuyin.calendar.debug3",
+  "name": "日历调试3",
+  "version": "1.0.0",
+  "author": "菠萝吹雪",
+  "description": "debug",
+  "pluginType": "script",
+  "minApi": 26,
+  "hostMinVersion": "5.1.6",
+  "permissions": [
+    "network",
+    "storage"
+  ],
+  "hooks": [
+    "data.home"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {}
+  },
+  "disabled": false,
+  "icon": "icon.png",
+  "priority": 55,
+  "category": "调试",
+  "license": "MIT",
+  "network": {
+    "allow": [
+      "api.bilibili.com"
+    ],
+    "deny": []
+  }
+}
