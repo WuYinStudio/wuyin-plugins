@@ -37,11 +37,11 @@
           "from": "eps",
           "saveAs": "cards",
           "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
+            "id": "#{item.episode_id}",
             "title": "#{item.title}",
             "cover": "#{item.cover}",
             "category": "#{categoryLabel}",
-            "remarks": "本周 #{item.pub_time} · #{item.pub_index}",
+            "remarks": "#{item.pub_time} · #{item.pub_index}",
             "sourceId": "bili-calendar",
             "sourceName": "#{sourceLabel}"
           }
