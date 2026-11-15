@@ -2,44 +2,35 @@
 
 无音影视插件市场索引。
 
-当前仅包含：
+当前包含：
 
 - **B站弹幕** `wuyin.danmaku.bili` `1.1.0`
+- **无音资源线路合集** `wuyin.lines.collection` `1.0.0`
+- **无音资源线路合集2** `wuyin.lines.collection2` `1.0.0`
 
-## GitHub Pages
+## 市场地址
 
-仓库 **Settings → Pages**：
+jsDelivr CDN（当前可用）：
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
+```text
+https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/index.json
+```
 
-启用后市场地址：
+GitHub Pages（需在仓库设置中开启）：
 
 ```text
 https://WuYinStudio.github.io/wuyin-plugins/index.json
 ```
 
-在无音影视：
+在无音影视：插件中心 → 市场 → 填入地址 → 刷新。
 
-```text
-插件中心 → 市场 → 填入上面的地址 → 刷新
-```
-
-## 文件
+## 目录
 
 ```text
 index.json
-plugins/wuyin-danmaku-bili-1.1.0.zip
-icons/wuyin.danmaku.bili.png
+plugins/
+icons/
 .nojekyll
 ```
 
-## 校验值
-
-```text
-SHA-256: 934f1985daa32a134acec571f217f73258ed97080fc69abe3d51139c2c9260c4
-大小:    2478 字节
-```
-
-宿主下载后会校验 SHA-256 与体积，不一致会拒绝安装。
+宿主下载后会校验 SHA-256 与体积；不一致会拒绝安装。
