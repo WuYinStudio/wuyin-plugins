@@ -2,27 +2,36 @@
 
 无音影视插件市场索引。
 
-当前包含：
-
-- **B站弹幕** `wuyin.danmaku.bili` `1.1.0`
-- **剧果短剧（黄果）** `wuyin.huangju` `1.0.4`
-- **无音资源线路合集** `wuyin.lines.collection` `1.0.0`
-- **无音资源线路合集2** `wuyin.lines.collection2` `1.0.0`
-
-## 市场地址
-
-jsDelivr CDN：
+## 市场版
 
 ```text
 https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/index.json
 ```
 
-GitHub Pages（需在仓库设置中开启）：
+脚本插件：
+
+- B站弹幕 `wuyin.danmaku.bili` 1.1.0
+- 剧果短剧（黄果）`wuyin.huangju` 1.0.4
+- 无音资源线路合集 `wuyin.lines.collection` 1.0.0
+- 无音资源线路合集2 `wuyin.lines.collection2` 1.0.0
+
+## Pro 版
+
+```text
+https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/index-pro.json
+```
+
+在脚本插件基础上增加：
+
+- 红果在线站源 `wuyin.hongguo` 1.0.0（HSP）
+
+Pro 版不内置任何 ZIP 插件，用户自行从上述市场安装。
+
+## GitHub Pages
 
 ```text
 https://WuYinStudio.github.io/wuyin-plugins/index.json
+https://WuYinStudio.github.io/wuyin-plugins/index-pro.json
 ```
 
-在无音影视：插件中心 → 市场 → 填入地址 → 刷新。
-
-宿主下载后会校验 SHA-256 与体积；不一致会拒绝安装。
+需在仓库 Settings → Pages 中开启 `main` / root。

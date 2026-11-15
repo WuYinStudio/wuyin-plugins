@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-15T12:41:15+08:00",
+  "plugins": [
+    {
+      "id": "wuyin.danmaku.bili",
+      "name": "B站弹幕",
+      "version": "1.1.0",
+      "pluginType": "script",
+      "kind": "media",
+      "author": "菠萝吹雪",
+      "description": "按片名自动匹配 B 站弹幕：搜索页 → BV 号 → cid → 弹幕 XML，全程免签名、免 Cookie。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin-danmaku-bili-1.1.0.zip",
+      "sha256": "934f1985daa32a134acec571f217f73258ed97080fc69abe3d51139c2c9260c4",
+      "size": 2478,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.danmaku.bili.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network"
+      ],
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "wuyin.lines.collection",
+      "name": "无音资源线路合集",
+      "version": "1.0.0",
+      "pluginType": "script",
+      "kind": "data-source",
+      "author": "菠萝吹雪",
+      "description": "从无音影视资源线路 JSON 整理：去重、仅保留 HTTPS CMS/XML 接口，共 64 条。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.lines.collection-1.0.0.zip",
+      "sha256": "55bbf4942dc2e8669cc837f901d149d7e5ae6e29084c141f6fffc5a0e287526d",
+      "size": 36875,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.lines.collection.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network"
+      ],
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "wuyin.lines.collection2",
+      "name": "无音资源线路合集·补充",
+      "version": "1.0.0",
+      "pluginType": "script",
+      "kind": "data-source",
+      "author": "菠萝吹雪",
+      "description": "无音影视资源线路 JSON 的补充线路（第 65 条以后），纯脚本、无 HSP。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.lines.collection2-1.0.0.zip",
+      "sha256": "c5200b0b74b399c3c3a6f812b8b16b5aa2099000825c477158e484b66105c087",
+      "size": 35311,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.lines.collection2.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network"
+      ],
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "wuyin.huangju",
+      "name": "剧果短剧（黄果）",
+      "version": "1.0.4",
+      "pluginType": "script",
+      "kind": "data-source",
+      "author": "菠萝吹雪",
+      "description": "黄果/剧果短剧在线接口：游客令牌、榜单/搜索、详情选集与 CloudFront 鉴权播放。纯脚本插件，无 HSP。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.huangju-1.0.4.zip",
+      "sha256": "2a6be376f848e3698304cf85b621909dee7dfbccfe66aa4982091332ed74a7d2",
+      "size": 36062,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.huangju.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network"
+      ],
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "wuyin.hongguo",
+      "name": "红果在线站源",
+      "version": "1.0.0",
+      "pluginType": "hsp",
+      "kind": "data-source",
+      "author": "菠萝吹雪",
+      "description": "红果短剧在线接口站源：搜索、详情分集与播放。片源为 CENC 加密，插件在本地完成解密后通过 127.0.0.1 提供播放地址。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.hongguo-1.0.0.zip",
+      "sha256": "3b64e8ff8330e667122013c07aa7bf0540f6d907c2ccb5df0e1920d705b25a87",
+      "size": 746571,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.hongguo.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network",
+        "storage"
+      ],
+      "updatedAt": "2026-11-15"
+    }
+  ]
+}
