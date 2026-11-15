@@ -5,7 +5,7 @@
   "hooks": {
     "data.home": {
       "request": {
-        "url": "https://api.bilibili.com/pgc/web/timeline?types=1&before=0&after=0",
+        "url": "https://api.bilibili.com/pgc/web/timeline?types=1&before=0&after=6",
         "method": "GET",
         "headers": {
           "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36",

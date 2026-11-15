@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T13:47:13+08:00",
+  "updatedAt": "2026-11-15T13:48:38+08:00",
   "plugins": [
     {
       "id": "wuyin.danmaku.bili",
@@ -119,14 +119,14 @@
     {
       "id": "wuyin.calendar.bili",
       "name": "追剧日历 · 今日番剧",
-      "version": "1.3.0",
+      "version": "1.3.1",
       "pluginType": "script",
       "kind": "data-source",
       "author": "菠萝吹雪",
       "description": "首页显示 B 站番剧/国创今日更新：日期、时间、集数，点击片名直接搜索资源。兼容 5.1.6+，纯脚本、无 HSP。",
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.calendar.bili-1.3.0.zip",
-      "sha256": "dbcc3e2611ef43d602aec9efc35ccfa4071a643450c84c1b4edbf53f5e801471",
-      "size": 4516,
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.calendar.bili-1.3.1.zip",
+      "sha256": "6c935c0d12fbbaec322173cea3790d534798faa807196dcb8337273ac6d8c83d",
+      "size": 4517,
       "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.calendar.bili.png",
       "minApi": 26,
       "hostMinVersion": "5.1.6",
