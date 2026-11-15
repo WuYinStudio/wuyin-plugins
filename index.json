@@ -10,10 +10,10 @@
       "kind": "media",
       "author": "菠萝吹雪",
       "description": "按片名自动匹配 B 站弹幕：搜索页 → BV 号 → cid → 弹幕 XML，全程免签名、免 Cookie。",
-      "downloadUrl": "https://raw.githubusercontent.com/WuYinStudio/wuyin-plugins/main/plugins/wuyin-danmaku-bili-1.1.0.zip",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin-danmaku-bili-1.1.0.zip",
       "sha256": "934f1985daa32a134acec571f217f73258ed97080fc69abe3d51139c2c9260c4",
       "size": 2478,
-      "iconUrl": "https://raw.githubusercontent.com/WuYinStudio/wuyin-plugins/main/icons/wuyin.danmaku.bili.png",
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.danmaku.bili.png",
       "minApi": 26,
       "hostMinVersion": "5.1.6",
       "permissions": [
