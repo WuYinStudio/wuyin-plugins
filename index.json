@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T13:18:12+08:00",
+  "updatedAt": "2026-11-15T13:20:41+08:00",
   "plugins": [
     {
       "id": "wuyin.danmaku.bili",
@@ -92,6 +92,25 @@
       "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.calendar.bili.png",
       "minApi": 26,
       "hostMinVersion": "5.1.6",
+      "permissions": [
+        "network"
+      ],
+      "updatedAt": "2026-11-15"
+    },
+    {
+      "id": "wuyin.blindbox.bili",
+      "name": "盲盒片单 · 视频",
+      "version": "1.0.0",
+      "pluginType": "script",
+      "kind": "data-source",
+      "author": "菠萝吹雪",
+      "description": "首页随机抽一部 B站热门视频：每次刷新都是新盲盒，点击片名可直接搜索资源。纯脚本、无 HSP。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.blindbox.bili-1.0.0.zip",
+      "sha256": "491bc874e427731009ceb3a5efea9df262bda948e21475d0c6cd98478b8a2464",
+      "size": 3507,
+      "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.blindbox.bili.png",
+      "minApi": 26,
+      "hostMinVersion": "5.1.8",
       "permissions": [
         "network"
       ],
