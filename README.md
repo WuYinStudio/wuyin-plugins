@@ -9,8 +9,9 @@ https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/index.json
 ```
 
 - B站弹幕 `wuyin.danmaku.bili` 1.1.0
-- 追剧日历 `wuyin.calendar.bili` 1.1.0
+- 追剧日历 `wuyin.calendar.bili` 1.1.1
 - 盲盒片单 `wuyin.blindbox.bili` 1.0.0
+- 观影成就 · 年度报告 `wuyin.achievement` 1.0.0（需 5.1.9）
 - 剧果短剧（黄果）`wuyin.huangju` 1.0.4
 - 无音资源线路合集 `wuyin.lines.collection` 1.0.0
 - 无音资源线路合集2 `wuyin.lines.collection2` 1.0.0

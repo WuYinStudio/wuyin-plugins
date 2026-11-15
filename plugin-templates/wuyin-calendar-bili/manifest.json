@@ -1,9 +1,9 @@
 {
   "id": "wuyin.calendar.bili",
   "name": "追剧日历 · 番剧",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "author": "菠萝吹雪",
-  "description": "首页显示 B 站番剧/国创未来 7 天更新日历：日期、时间、更新集数，点击片名直接搜索资源。纯脚本、无 HSP。",
+  "description": "首页显示 B 站番剧/国创本周更新：时间、集数，点击片名直接搜索资源。纯脚本、无 HSP。",
   "pluginType": "script",
   "minApi": 26,
   "hostMinVersion": "5.1.6",
@@ -29,13 +29,5 @@
       "www.bilibili.com"
     ],
     "deny": []
-  },
-  "integrity": {
-    "algorithm": "sha256",
-    "files": {
-      "icon.png": "9dcd7d39551dd5630bf7007c87eeb0f62086f364140dde78586a8da01546e382",
-      "README.md": "7aa0acd3272d558ff5df10d811a1d7db7137602799fa37dd67b07883d1e61b30",
-      "script.json": "68fb5dd90503a0e495f7cdd201864f232bec516576b78a19b5a7ad413d405d60"
-    }
   }
 }

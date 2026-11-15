@@ -28,210 +28,23 @@
         {
           "op": "json",
           "from": "response",
-          "path": "$.result.0.episodes",
-          "saveAs": "eps0",
+          "path": "$.result.*.episodes.*",
+          "saveAs": "eps",
           "optional": false
         },
         {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.0.date",
-          "saveAs": "date0",
-          "optional": true
-        },
-        {
           "op": "map",
-          "from": "eps0",
-          "saveAs": "c0",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date0} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.1.episodes",
-          "saveAs": "eps1",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.1.date",
-          "saveAs": "date1",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps1",
-          "saveAs": "c1",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date1} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.2.episodes",
-          "saveAs": "eps2",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.2.date",
-          "saveAs": "date2",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps2",
-          "saveAs": "c2",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date2} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.3.episodes",
-          "saveAs": "eps3",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.3.date",
-          "saveAs": "date3",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps3",
-          "saveAs": "c3",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date3} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.4.episodes",
-          "saveAs": "eps4",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.4.date",
-          "saveAs": "date4",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps4",
-          "saveAs": "c4",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date4} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.5.episodes",
-          "saveAs": "eps5",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.5.date",
-          "saveAs": "date5",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps5",
-          "saveAs": "c5",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date5} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.6.episodes",
-          "saveAs": "eps6",
-          "optional": false
-        },
-        {
-          "op": "json",
-          "from": "response",
-          "path": "$.result.6.date",
-          "saveAs": "date6",
-          "optional": true
-        },
-        {
-          "op": "map",
-          "from": "eps6",
-          "saveAs": "c6",
-          "fields": {
-            "id": "bili-calendar-#{item.episode_id}",
-            "title": "#{item.title}",
-            "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{date6} #{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
-          }
-        },
-        {
-          "op": "set",
-          "value": "[#{c0},#{c1},#{c2},#{c3},#{c4},#{c5},#{c6}]",
-          "saveAs": "allJson"
-        },
-        {
-          "op": "json",
-          "from": "allJson",
-          "path": "$",
+          "from": "eps",
           "saveAs": "cards",
-          "optional": false
+          "fields": {
+            "id": "bili-calendar-#{item.episode_id}",
+            "title": "#{item.title}",
+            "cover": "#{item.cover}",
+            "category": "#{categoryLabel}",
+            "remarks": "本周 #{item.pub_time} · #{item.pub_index}",
+            "sourceId": "bili-calendar",
+            "sourceName": "#{sourceLabel}"
+          }
         }
       ],
       "output": {
