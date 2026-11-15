@@ -1,0 +1,33 @@
+{
+  "id": "wuyin.calendar.bili",
+  "name": "追剧日历 · 番剧",
+  "version": "1.0.0",
+  "author": "菠萝吹雪",
+  "description": "每天在首页显示 B 站番剧/国创的更新日历：更新时间、更新集数，点击片名可直接搜索资源。纯脚本、无 HSP。",
+  "pluginType": "script",
+  "minApi": 26,
+  "hostMinVersion": "5.1.8",
+  "permissions": [
+    "network"
+  ],
+  "hooks": [
+    "data.home"
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {}
+  },
+  "disabled": false,
+  "icon": "icon.png",
+  "priority": 55,
+  "category": "追剧",
+  "license": "MIT",
+  "network": {
+    "allow": [
+      "api.bilibili.com",
+      "i0.hdslb.com",
+      "www.bilibili.com"
+    ],
+    "deny": []
+  }
+}

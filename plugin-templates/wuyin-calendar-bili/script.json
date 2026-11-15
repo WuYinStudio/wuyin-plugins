@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pluginId": "wuyin.calendar.bili",
+  "kind": "data-source",
+  "hooks": {
+    "data.home": {
+      "request": {
+        "url": "https://api.bilibili.com/pgc/web/timeline?types=1&before=0&after=0",
+        "method": "GET",
+        "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Referer": "https://www.bilibili.com/",
+          "Origin": "https://www.bilibili.com"
+        },
+        "expect": "json"
+      },
+      "steps": [
+        { "op": "json", "from": "response", "path": "$.result.0.episodes", "saveAs": "eps", "optional": false },
+        { "op": "set", "value": "追剧日历", "saveAs": "categoryLabel" },
+        { "op": "set", "value": "B站番剧", "saveAs": "sourceLabel" },
+        {
+          "op": "map",
+          "from": "eps",
+          "saveAs": "cards",
+          "fields": {
+            "id": "bili-calendar-#{item.episode_id}",
+            "title": "#{item.title}",
+            "cover": "#{item.cover}",
+            "category": "#{categoryLabel}",
+            "remarks": "今日 #{item.pub_time} · #{item.pub_index}",
+            "sourceId": "bili-calendar",
+            "sourceName": "#{sourceLabel}"
+          }
+        }
+      ],
+      "output": {
+        "text": "今日追剧"
+      }
+    }
+  },
+  "network": {
+    "allow": ["api.bilibili.com", "i0.hdslb.com", "www.bilibili.com"],
+    "deny": []
+  },
+  "limits": {
+    "timeoutMs": 6000,
+    "maxSteps": 200,
+    "maxResponseBytes": 2097152
+  }
+}
