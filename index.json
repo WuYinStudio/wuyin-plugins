@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T13:07:45+08:00",
+  "updatedAt": "2026-11-15T13:09:13+08:00",
   "plugins": [
     {
       "id": "wuyin.danmaku.bili",
@@ -81,14 +81,14 @@
     {
       "id": "wuyin.calendar.bili",
       "name": "追剧日历 · 番剧",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "pluginType": "script",
       "kind": "data-source",
       "author": "菠萝吹雪",
-      "description": "每天在首页显示 B 站番剧/国创的更新日历：更新时间、更新集数，点击片名可直接搜索资源。纯脚本、无 HSP。",
-      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.calendar.bili-1.0.0.zip",
-      "sha256": "38f40459a29cd05a1a869446d6edddd64baedb45c96a1925a624963a7a388b7a",
-      "size": 4433,
+      "description": "首页显示 B 站番剧/国创未来 7 天更新日历：日期、时间、更新集数，点击片名直接搜索资源。纯脚本、无 HSP。",
+      "downloadUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/plugins/wuyin.calendar.bili-1.1.0.zip",
+      "sha256": "1978ccb0368c33f389a3c4fc34dd93259cc2e85ec57277cd3611655228b840f2",
+      "size": 4702,
       "iconUrl": "https://cdn.jsdelivr.net/gh/WuYinStudio/wuyin-plugins@main/icons/wuyin.calendar.bili.png",
       "minApi": 26,
       "hostMinVersion": "5.1.8",
