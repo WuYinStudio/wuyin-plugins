@@ -5,33 +5,38 @@
   "hooks": {
     "data.home": {
       "request": {
-        "url": "https://api.bilibili.com/pgc/web/timeline?types=1&before=0&after=6",
+        "url": "https://api.bilibili.com/pgc/web/timeline?types=1&before=0&after=0",
         "method": "GET",
         "headers": {
-          "Accept": "application/json, text/plain, */*",
-          "Referer": "https://www.bilibili.com/",
-          "Origin": "https://www.bilibili.com",
-          "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36"
+          "User-Agent": "Mozilla/5.0 (Linux; Android 11; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.91 Mobile Safari/537.36",
+          "Referer": "https://www.bilibili.com/"
         },
         "expect": "json"
       },
       "steps": [
         {
-          "op": "set",
-          "value": "追剧日历",
-          "saveAs": "categoryLabel"
-        },
-        {
-          "op": "set",
-          "value": "B站番剧",
-          "saveAs": "sourceLabel"
+          "op": "json",
+          "from": "response",
+          "path": "$.result.0.episodes",
+          "saveAs": "eps",
+          "optional": false
         },
         {
           "op": "json",
           "from": "response",
-          "path": "$.result.*.episodes.*",
-          "saveAs": "eps",
-          "optional": false
+          "path": "$.result.0.date",
+          "saveAs": "day",
+          "optional": true
+        },
+        {
+          "op": "set",
+          "value": "追剧日历",
+          "saveAs": "cat"
+        },
+        {
+          "op": "set",
+          "value": "B站番剧",
+          "saveAs": "src"
         },
         {
           "op": "map",
@@ -41,15 +46,14 @@
             "id": "#{item.episode_id}",
             "title": "#{item.title}",
             "cover": "#{item.cover}",
-            "category": "#{categoryLabel}",
-            "remarks": "#{item.pub_time} · #{item.pub_index}",
-            "sourceId": "bili-calendar",
-            "sourceName": "#{sourceLabel}"
+            "category": "#{cat}",
+            "remarks": "#{day} #{item.pub_time} · #{item.pub_index}",
+            "sourceName": "#{src}"
           }
         }
       ],
       "output": {
-        "text": "本周追剧"
+        "text": "今日追剧"
       }
     }
   },
